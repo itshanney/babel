@@ -8,7 +8,7 @@
     <packaging>war</packaging>
     <version>0.1.0-SNAPSHOT</version>
     <name>Babel Localization Tool</name>
-    <description>Babel is an application to help developers wrangle Localization for their applications</description>
+    <description>Babel is an application to wrangle Localization of software</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
