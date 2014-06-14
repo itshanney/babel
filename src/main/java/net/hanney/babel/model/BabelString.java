@@ -38,7 +38,7 @@ public class BabelString implements Serializable {
         return stringId;
     }
 
-    public void setStringId(Long stringId) {
+    public void setStringId(final Long stringId) {
         this.stringId = stringId;
     }
 
@@ -46,7 +46,7 @@ public class BabelString implements Serializable {
         return stringKey;
     }
 
-    public void setStringKey(String stringKey) {
+    public void setStringKey(final String stringKey) {
         this.stringKey = stringKey;
     }
 
@@ -54,7 +54,7 @@ public class BabelString implements Serializable {
         return defaultValue;
     }
 
-    public void setDefaultValue(String defaultValue) {
+    public void setDefaultValue(final String defaultValue) {
         this.defaultValue = defaultValue;
     }
 
@@ -62,7 +62,7 @@ public class BabelString implements Serializable {
         return context;
     }
 
-    public void setContext(String context) {
+    public void setContext(final String context) {
         this.context = context;
     }
 
@@ -70,7 +70,7 @@ public class BabelString implements Serializable {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(final Date createDate) {
         this.createDate = createDate;
     }
 
@@ -78,7 +78,7 @@ public class BabelString implements Serializable {
         return isActive;
     }
 
-    public void setIsActive(boolean isActive) {
+    public void setIsActive(final boolean isActive) {
         this.isActive = isActive;
     }
 

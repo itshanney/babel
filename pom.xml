@@ -155,7 +155,7 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <!-- Minion Website Dependencies -->
+        <!-- Babel Website Dependencies -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>

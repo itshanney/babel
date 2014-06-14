@@ -23,7 +23,7 @@ public class Language implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String languageCode;
-    private String description;
+    private String languageName;
     private Date createDate;
     private Boolean isActive;
 
@@ -31,23 +31,23 @@ public class Language implements Serializable {
         return languageCode;
     }
 
-    public void setLanguageCode(String languageCode) {
+    public void setLanguageCode(final String languageCode) {
         this.languageCode = languageCode;
     }
 
-    public String getDescription() {
-        return description;
+    public String getLanguageName() {
+        return languageName;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLanguageName(final String languageName) {
+        this.languageName = languageName;
     }
 
     public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(final Date createDate) {
         this.createDate = createDate;
     }
 
@@ -55,7 +55,7 @@ public class Language implements Serializable {
         return isActive;
     }
 
-    public void setIsActive(boolean isActive) {
+    public void setIsActive(final boolean isActive) {
         this.isActive = isActive;
     }
 
@@ -63,7 +63,7 @@ public class Language implements Serializable {
     public String toString() {
         return new ToStringBuilder(this)
                 .append("languageCode", getLanguageCode())
-                .append("description", getDescription())
+                .append("languageName", getLanguageName())
                 .append("createDate", getCreateDate())
                 .append("isActive", getIsActive())
                 .toString();

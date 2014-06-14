@@ -5,7 +5,7 @@
          version="3.0">
 
     <display-name>Babel</display-name>
-    <description>Babel is an application to wrangle Localization of software</description>
+    <languageName>Babel is an application to wrangle Localization of software</languageName>
 
     <welcome-file-list>
         <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>

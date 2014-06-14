@@ -20,7 +20,7 @@ public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private Long productId;
+    private String productCode;
     private String productName;
     private String description;
     private Date createDate;
@@ -30,19 +30,19 @@ public class Product implements Serializable {
         super();
     }
 
-    public Long getProductId() {
-        return productId;
+    public String getProductCode() {
+        return productCode;
     }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setProductCode(final String productCode) {
+        this.productCode = productCode;
     }
 
     public String getProductName() {
         return productName;
     }
 
-    public void setProductName(String productName) {
+    public void setProductName(final String productName) {
         this.productName = productName;
     }
 
@@ -50,7 +50,7 @@ public class Product implements Serializable {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -58,7 +58,7 @@ public class Product implements Serializable {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(final Date createDate) {
         this.createDate = createDate;
     }
 
@@ -66,14 +66,14 @@ public class Product implements Serializable {
         return isActive;
     }
 
-    public void setIsActive(boolean isActive) {
+    public void setIsActive(final boolean isActive) {
         this.isActive = isActive;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("productId", getProductId())
+                .append("productCode", getProductCode())
                 .append("productName", getProductName())
                 .append("description", getDescription())
                 .append("createDate", getCreateDate())
