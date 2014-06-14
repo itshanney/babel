@@ -5,7 +5,18 @@
          version="3.0">
 
     <display-name>Babel</display-name>
-    <languageName>Babel is an application to wrangle Localization of software</languageName>
+    <description>Babel is an application to wrangle Localization of software</description>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:spring/babel-context.xml
+        </param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 
     <welcome-file-list>
         <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>

@@ -6,6 +6,7 @@ package net.hanney.babel.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -16,14 +17,27 @@ import java.util.Date;
  * @author justin.hanney
  * @since 0.1.0
  */
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Table(name="products")
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "product_code", length = 16)
     private String productCode;
+
+    @Column(name = "product_name", length = 128)
     private String productName;
+
+    @Column(name = "description", length = 256)
     private String description;
+
+    @Column(name = "create_date")
     private Date createDate;
+
+    @Column(name = "is_active")
     private boolean isActive;
 
     public Product() {

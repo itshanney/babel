@@ -6,6 +6,7 @@ package net.hanney.babel.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -19,15 +20,30 @@ import java.util.Date;
  * @author justin.hanney
  * @since 0.1.0
  */
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Table(name="babel_strings")
 public class BabelString implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "string_id")
     private Long stringId;
+
+    @Column(name = "string_key")
     private String stringKey;
+
+    @Column(name = "default_value")
     private String defaultValue;
+
+    @Column(name = "context")
     private String context;
+
+    @Column(name = "create_date")
     private Date createDate;
+
+    @Column(name = "is_active")
     private boolean isActive;
 
     public BabelString() {
